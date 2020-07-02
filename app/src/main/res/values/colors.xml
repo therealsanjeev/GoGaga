@@ -6,4 +6,7 @@
 
     <color name="brown">#582233</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="imageBack">#ADB6B6B6</color>
+
 </resources>

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="250dp"
-    android:width="500dp"
-    android:viewportHeight="100"
-    android:viewportWidth="90">
-    <group
-        android:name="triableGroup">
-        <path
-            android:name="triangle"
-            android:fillColor="@color/colorPrimaryDark"
-            android:pathData="m 0,0 l 50,100 -50,0 z" />
-    </group>
-</vector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/rightArrow">
+        <rotate
+            android:fromDegrees="0"
+            android:pivotX="0%"
+            android:pivotY="0%" >
+            <shape
+
+                android:shape="rectangle"  >
+                <stroke android:color="@android:color/transparent" android:width="10dp"/>
+                <solid
+                    android:color="#B2582233"  />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
