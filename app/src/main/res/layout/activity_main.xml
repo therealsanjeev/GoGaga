@@ -12,29 +12,77 @@
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="250dp">
+        <ImageView
+            android:background="@drawable/backtriangle"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
-        <FrameLayout
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <de.hdodenhof.circleimageview.CircleImageView
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                android:src="@color/imageBack"
-                android:layout_width="130dp"
-                android:layout_height="130dp"/>
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_gravity="center"
-                android:src="@drawable/pro"
-                android:layout_width="100dp"
-                android:layout_height="100dp"/>
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="128dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        </FrameLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profileback" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pro" />
+
+            </FrameLayout>
 
 
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
+                app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+                app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sanjeev"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 referred friend"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="85dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBlack" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
 
     <TextView
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="32dp"
         android:textAllCaps="true"
         android:textSize="14sp"
@@ -48,6 +96,7 @@
         android:layout_width="117dp"
         android:layout_height="1dp"/>
     <LinearLayout
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center"

@@ -1,17 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:id="@+id/rightArrow">
-        <rotate
-            android:fromDegrees="0"
-            android:pivotX="0%"
-            android:pivotY="0%" >
-            <shape
 
-                android:shape="rectangle"  >
-                <stroke android:color="@android:color/transparent" android:width="10dp"/>
-                <solid
-                    android:color="#B2582233"  />
+    <!-- Colored rectangle-->
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:top="35dp"/>
+            <size android:width="200dp" android:height="40dp" />
+            <solid android:color="#80582233" />
+        </shape>
+    </item>
+    <item
+        android:right="-80dp"
+        android:left="90dp"
+        android:top="10dp"
+        android:bottom="-360dp">
+        <rotate android:fromDegrees="75">
+            <shape android:shape="rectangle">
+                <padding android:top="-35dp"/>
+                <solid android:color="#FAFAFA" />
             </shape>
         </rotate>
     </item>
-</layer-list>
+
+    </layer-list>
