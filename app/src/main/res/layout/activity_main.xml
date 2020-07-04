@@ -79,7 +79,10 @@
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
     </FrameLayout>
+
 
     <TextView
         android:layout_marginTop="8dp"
@@ -91,10 +94,11 @@
         android:layout_width="117dp"
         android:layout_height="wrap_content"/>
     <View
-        android:layout_marginLeft="32dp"
-        android:background="@color/colorBlack"
         android:layout_width="117dp"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:background="@color/colorBlack" />
+
     <LinearLayout
         android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
